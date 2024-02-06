@@ -21,6 +21,15 @@ button{
   cursor: pointer;
 }
 
+.scroll_bar{
+  height: 5px;
+  width: 0%;
+  background-color: black;
+
+  animation: scroll-watcher linear;
+    animation-timeline: scroll();
+}
+
 .section_title{
   text-align: center;
   padding: 20px;
@@ -62,8 +71,6 @@ details {
   padding: 20px;
   margin-left: -8px;
   border: 1px solid gainsboro;
-  animation: scroll-watcher linear;
-  animation-timeline: scroll();
 
   display: flex;
   flex-direction: column;
@@ -86,14 +93,10 @@ header {
   display: flex;
   align-items: center;
   gap: 25px;
-  animation: scroll-watcher linear;
-  animation-timeline: scroll();
 }
 
 .navbar li a {
   color: black;
-  animation: scroll-watcher linear;
-  animation-timeline: scroll();
 }
 
 .header__top {
@@ -156,14 +159,10 @@ header {
   gap: 10px;
   border-radius: 0 0 5px 5px;
 
-  animation: scroll-watcher linear;
-  animation-timeline: scroll();
 }
 
 .res_list li a {
   color: black;
-  animation: scroll-watcher linear;
-  animation-timeline: scroll();
 }
 
 .res__menu {
@@ -173,13 +172,10 @@ header {
 .header__bottom {
   background-color: white;
   color: black;
-  animation: scroll-watcher linear;
-  animation-timeline: scroll();
 }
 @keyframes scroll-watcher {
   to {
-    background-color: black;
-    color: white;
+    width: 100%;
   }
 }
 
